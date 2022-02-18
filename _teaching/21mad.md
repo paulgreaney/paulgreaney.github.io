@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Cloud and Mobile Technologies"
 collection: teaching
-type: "Postgraduate course"
+type: "Undergraduate course"
 permalink: /teaching/2021-cmt
 venue: "LYIT, Department of Computing"
 date: 2022-01-01
