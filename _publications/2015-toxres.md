@@ -7,9 +7,8 @@ date: 2015-10-01
 venue: 'Journal 1'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
 citation: 'Gladkovskaya, O., Greaney, P., Gun'ko, Y.K., O'Connor, G.M., Meere, M. and Rochev, Y. (2015). &quot;An experimental and theoretical assessment of quantum dot cytotoxicity.&quot; <i>Toxicology Research</i>. 4(5), pp.1409-1415.'
-
-
 ---
+
 Quantum dots (QDs) are a class of semiconductor nanoparticles that possess a unique set of sizetunable optical properties. The potential applications of QDs in biological and medical applications
 are enormous - some notable examples being in high-resolution cellular imaging, cancer tumour
 targeting and drug delivery. However, the mechanisms for QD-cell interactions are at best partially
