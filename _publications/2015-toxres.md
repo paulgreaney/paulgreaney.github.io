@@ -1,6 +1,6 @@
 ---
 title: "An experimental and theoretical assessment of quantum dot cytotoxicity"
-excerpt: 
+excerpt: ""
 collection: publications
 permalink: /publication/2015-toxres
 date: 2015-10-01
