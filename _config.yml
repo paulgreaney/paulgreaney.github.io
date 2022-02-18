@@ -10,10 +10,10 @@ locale                   : "en-IE"
 title                    : "Paul Greaney"
 title_separator          : "-"
 name                     : &name "Paul Greaney"
-description              : &description "Department of Computing, Letterkenny Institute of Technology"
-url                      : https://PGreaneyLYIT.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : &description "personal academic website"
+url                      : https://paulgreaney.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "PGreaneyLYIT/PGreaneyLYIT.github.io"
+repository               : "paulgreaney/paulgreaney.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &paulkilgill
+  username               :
 facebook:
   username               :
   app_id                 :
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Paul Greaney"
   avatar           : "profile.png"
-  bio              : "Lecturer in Computing"
-  location         : "Atlantic Technological University - Letterkenny"
+  bio              : "Lecturer in Computer Science"
+  location         : "Letterkenny"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=HuCttXIAAAAJ&hl=en"
-  email            :
+  email            : "paul.greaney@lyit.ie"
   researchgate     :  "https://www.researchgate.net/profile/Paul-Greaney"
   uri              :
   bitbucket        :
@@ -96,20 +96,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "PGreaneyLYIT"
+  github           : "paulgreaney"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://ie.linkedin.com/in/greaney"
   orcid            : "https://orcid.org/0000-0002-7419-5811"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "paulkilgill"
+  twitter          : 
   vine             :
   weibo            :
   xing             :
@@ -182,7 +182,7 @@ collections:
     output: true
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
     output: true
