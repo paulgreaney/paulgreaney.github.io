@@ -16,7 +16,7 @@ Education
 
 Work experience
 ======
-* 2021-present: Lecturer in Computing, Letterkenny Institute of Technology
+* 2021-present: Lecturer in Computing, Atlantic Technological University - Letterkenny Campus
 
 * 2018-2021: Research Engineer, Valeo Vision Systems
   * Development of deep learning algorithms for computer vision
