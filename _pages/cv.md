@@ -11,8 +11,8 @@ redirect_from:
 
 Education
 ======
-* BSc. in Applied Mathematics, NUI Galway, 2014
-* Ph.D in Applied Mathematics, NUI Galway, 2018
+* BSc in Applied Mathematics, NUI Galway, 2014
+* PhD in Applied Mathematics, NUI Galway, 2018
 
 Work experience
 ======
