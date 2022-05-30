@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a lecturer in the Department of Computing at Atlantic Technological University - Letterkenny Campus, where I teach on the [MSc/PGDip in DevOps](https://www.lyit.ie/CourseDetails/D202/LY_KDVOP_M/DevOps), [MSc in Cybersecurity](https://www.lyit.ie/CourseDetails/D202/LY_KCYBS_M/Cybersecurity), [PGDip in Cloud Computing](https://springboardcourses.ie/details/9267), 
+I am a lecturer in the Department of Computing at Atlantic Technological University Donegal - Letterkenny Campus, where I teach on the [MSc/PGDip in DevOps](https://www.lyit.ie/CourseDetails/D202/LY_KDVOP_M/DevOps), [MSc in Cybersecurity](https://www.lyit.ie/CourseDetails/D202/LY_KCYBS_M/Cybersecurity), [PGDip in Cloud Computing](https://springboardcourses.ie/details/9267), 
 and BSc [Computing](https://www.lyit.ie/CourseDetails/D303/LY_KCMPU_B/Computing)/[Applied Computing](https://www.lyit.ie/CourseDetails/D303/LY_KCOMP_B/AppliedComputing) courses. 
 
 Prior to this, I spent three years as a research engineer at [Valeo Vision Systems](https://www.valeo.com/en/), working on deep learning algorithms for computer vision.
