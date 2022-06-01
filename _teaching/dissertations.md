@@ -4,7 +4,7 @@ collection: teaching
 type: ""
 permalink: /teaching/dissertations
 venue: "ATU Donegal, Department of Computing"
-date:
+date: ""
 location: ""
 ---
 
