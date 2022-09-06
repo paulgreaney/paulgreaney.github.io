@@ -8,8 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a lecturer in the Department of Computing at Atlantic Technological University Donegal - Letterkenny Campus, where I teach on the [MSc in Data Science](), [MSc in Big Data Analytics & Artificial Intelligence](), [BSc in Cyberpsychology](), and [Diploma in Applied Data Technologies](). [MSc/PGDip in DevOps](https://www.lyit.ie/CourseDetails/D202/LY_KDVOP_M/DevOps), [MSc in Cybersecurity](https://www.lyit.ie/CourseDetails/D202/LY_KCYBS_M/Cybersecurity), [PGDip in Cloud Computing](https://springboardcourses.ie/details/9267), 
-and BSc [Computing](https://www.lyit.ie/CourseDetails/D303/LY_KCMPU_B/Computing)/[Applied Computing](https://www.lyit.ie/CourseDetails/D303/LY_KCOMP_B/AppliedComputing) courses. 
+I am a lecturer in the Department of Computing at Atlantic Technological University Donegal - Letterkenny Campus, where I teach on the [MSc in Data Science](https://www.lyit.ie/CourseDetails/D303/NC1080/DataScience&PreparatoryCertificateinComputing), [MSc in Big Data Analytics & Artificial Intelligence](https://www.lyit.ie/CourseDetails/D303/LY_KDAAI_M/BigDataAnalyticsandArtificialIntelligence), [BSc in Cyberpsychology](https://www.lyit.ie/CourseDetails/D303/NC2081/BScHonsinCyberpsychology), and [Diploma in Applied Data Technologies](https://www.lyit.ie/portals/0/PDF/atu/springboard/2022DiplomainAppliedDataTechnologies.pdf) courses. 
 
 Prior to this, I spent three years as a research engineer at [Valeo Vision Systems](https://www.valeo.com/en/), working on deep learning algorithms for computer vision.
 
