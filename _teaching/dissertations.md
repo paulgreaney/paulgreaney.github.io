@@ -1,7 +1,7 @@
 ---
 title: "Dissertation Supervision"
 collection: teaching
-type: "MSc dissertation"
+type: "MSc dissertations"
 permalink: /teaching/dissertations
 venue: "ATU Donegal, Department of Computing"
 date: 2022-01-01
