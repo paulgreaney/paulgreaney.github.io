@@ -8,8 +8,10 @@ date: 2022-01-01
 location: "Letterkenny"
 ---
 
-Connie McLaughlin (M.Sc. Big Data Analytics & Artificial Intelligence) - _Using Machine Learning and Sentiment Analysis for Cryptocurrency Price Predictions_
+Dissertation supervision on the M.Sc. Big Data Analytics & Artificial Intelligence programme.
 
-Ezra Kirui (M.Sc. in Big Data Analytics & Artificial Intelligence) - _Independent Ethical Judgment by Autonomous Vehicles During Obstacle Avoidance_
+Connie McLaughlin (M.Sc. Big Data Analytics & Artificial Intelligence, 2022) - _Using Machine Learning and Sentiment Analysis for Cryptocurrency Price Predictions_
 
-Jaisal Sabu (M.Sc. in Big Data Analytics) - _Deep Learning Models for Drug-Target Interaction_
+Ezra Kirui (M.Sc. in Big Data Analytics & Artificial Intelligence, 2022) - _Independent Ethical Judgment by Autonomous Vehicles During Obstacle Avoidance_
+
+Jaisal Sabu (M.Sc. in Big Data Analytics, 2022) - _Deep Learning Models for Drug-Target Interaction_
