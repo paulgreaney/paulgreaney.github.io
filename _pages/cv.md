@@ -9,18 +9,20 @@ redirect_from:
 
 {% include base_path %}
 
+Work experience
+======
+* 2022-present: Lecturer in Computing, Atlantic Technological University - Letterkenny Campus
+
+* 2021-2022: Assistant Lecturer in Computing, Atlantic Technological University - Letterkenny Campus
+
+* 2018-2021: Research Engineer, Valeo Vision Systems
+  * Development of deep learning algorithms for computer vision
+
 Education
 ======
 * BSc in Applied Mathematics, NUI Galway, 2014
 * PhD in Applied Mathematics, NUI Galway, 2018
 
-Work experience
-======
-* 2021-present: Lecturer in Computing, Atlantic Technological University - Letterkenny Campus
-
-* 2018-2021: Research Engineer, Valeo Vision Systems
-  * Development of deep learning algorithms for computer vision
-  
 Teaching
 ======
   <ul>{% for post in site.teaching %}
