@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2021-cmt
 venue: "LYIT, Department of Computing"
-date: 2022-01-01
+date: 2021-09-01
 location: "Letterkenny, Co. Donegal"
 ---
 
