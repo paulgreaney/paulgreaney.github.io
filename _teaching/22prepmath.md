@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2022-prepmath
 venue: "ATU Donegal, Department of Computing"
-date: 2021-09-19
+date: 2022-09-01
 location: "Letterkenny, Co. Donegal"
 ---
 
