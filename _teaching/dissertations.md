@@ -10,6 +10,8 @@ location: "Letterkenny"
 
 Dissertation supervision on the M.Sc. Big Data Analytics & Artificial Intelligence programme.
 
+Previous students:
+
 Connie McLaughlin (M.Sc. Big Data Analytics & Artificial Intelligence, 2022) - _Using Machine Learning and Sentiment Analysis for Cryptocurrency Price Predictions_
 
 Ezra Kirui (M.Sc. in Big Data Analytics & Artificial Intelligence, 2022) - _Independent Ethical Judgment by Autonomous Vehicles During Obstacle Avoidance_
