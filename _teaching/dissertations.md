@@ -4,7 +4,7 @@ collection: teaching
 type: "MSc dissertations"
 permalink: /teaching/dissertations
 venue: "ATU Donegal, Department of Computing"
-date: 2022-01-01
+date: 2023-01-01
 location: "Letterkenny"
 ---
 
