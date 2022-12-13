@@ -4,7 +4,7 @@ collection: teaching
 type: "Postgraduate course"
 permalink: /teaching/2021-was
 venue: "LYIT, Department of Computing"
-date: 2022-03-01
+date: 2021-09-01
 location: "Letterkenny, Co. Donegal"
 ---
 
