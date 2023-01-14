@@ -17,3 +17,5 @@ Connie McLaughlin (M.Sc. Big Data Analytics & Artificial Intelligence, 2022) - _
 Ezra Kirui (M.Sc. in Big Data Analytics & Artificial Intelligence, 2022) - _Independent Ethical Judgment by Autonomous Vehicles During Obstacle Avoidance_
 
 Jaisal Sabu (M.Sc. in Big Data Analytics, 2022) - _Deep Learning Models for Drug-Target Interaction_
+
+Tobi Akanbi (M.Sc. in Big Data Analytics & Artificial Intelligence, 2023) - _Heart Failure Prediction Using Real and Synthetic Data_
