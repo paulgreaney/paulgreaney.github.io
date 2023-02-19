@@ -11,6 +11,9 @@ main:
 
   - title: "Publications"
     url: /publications/
+    
+  - title: "MSc Dissertations"
+    url: /dissertations/
 
 #  - title: "Portfolio"
 #    url: /portfolio/
