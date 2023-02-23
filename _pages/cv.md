@@ -23,11 +23,12 @@ Education
 * BSc in Applied Mathematics, NUI Galway, 2014
 * PhD in Applied Mathematics, NUI Galway, 2018
 
-Teaching
+<!--Teaching
 ======
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+-->
 
 Publications
 ======
