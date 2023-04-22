@@ -10,19 +10,11 @@ tags:
 
 All you need is attention.
 
-The vector 
-$
-\begin{pmatrix}
-0.1\\
-0.8\\
-0.2
-\end{pmatrix}
-$
 
-\begin{equation*}
+$$
 \begin{pmatrix}
 0.1\\
 0.8\\
 0.2
 \end{pmatrix}
-\end{equation*}
+$$
