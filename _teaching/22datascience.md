@@ -8,4 +8,4 @@ date: 2022-12-01
 location: "Letterkenny, Co. Donegal"
 ---
 
-Introduction to data science on the BSc in Cyberpsychology.
+Introduction to data science on the BSc in Cyberpsychology. Topics include: data science lifecycle; ethics, bias, and privacy; data preprocessing and cleaning; data visualisation; descriptive and prescriptive analytics; predictive analytics, supervised and unsupervised learning.
