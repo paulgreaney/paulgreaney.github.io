@@ -8,4 +8,4 @@ date: 2022-09-01
 location: "Letterkenny, Co. Donegal"
 ---
 
-Introductory mathematics on the BSc in Cyberpsychology.
+Introductory mathematics on the BSc in Cyberpsychology. Topics: number systems; set theory; Boolean logic; matrices; graph theory.
