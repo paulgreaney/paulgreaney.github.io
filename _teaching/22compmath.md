@@ -8,4 +8,4 @@ date: 2022-09-12
 location: "Letterkenny, Co. Donegal"
 ---
 
-Mathematics for data science, including linear algebra, multivariate calculus, probability and statistics, on the MSc in Data Science.
+10 ECTS module on the MSc in Data Science. Topics include: matrix algebra and aspects of computation; multivariate calculus; gradient descent; backpropagation for neural networks; probability distributions; central limit theorem; statistical inference and hypothesis testing.
