@@ -9,6 +9,7 @@ location: "Letterkenny, Co. Donegal"
 ---
 
 10 ECTS module on the MSc in Data Science, providing a comprehensive foundation in the mathematics underpinning data science and machine learning. 
+
 Topics include: 
  - Matrix algebra and aspects of computation;
  - Multivariate calculus;
