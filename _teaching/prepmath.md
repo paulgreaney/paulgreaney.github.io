@@ -8,7 +8,7 @@ date: 2023-09-01
 location: "Letterkenny, Co. Donegal"
 ---
 
-An introductory mathematics module taken in the first year of the BSc Hons in Cyberpsychology. 
+A 5 ECTS introductory mathematics module taken in the first year of the BSc Hons in Cyberpsychology. 
 
 Topics: 
  - Number systems;
