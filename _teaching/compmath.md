@@ -2,7 +2,7 @@
 title: "Computational Mathematics"
 collection: teaching
 type: "Postgraduate course"
-permalink: /teaching/2022-compmath
+permalink: /teaching/compmath
 venue: "ATU Donegal, Department of Computing"
 date: 2023-09-12
 location: "Letterkenny, Co. Donegal"
