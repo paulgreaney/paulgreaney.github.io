@@ -2,7 +2,7 @@
 title: "Preparatory Mathematics"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2022-prepmath
+permalink: /teaching/prepmath
 venue: "ATU Donegal, Department of Computing"
 date: 2023-09-01
 location: "Letterkenny, Co. Donegal"
