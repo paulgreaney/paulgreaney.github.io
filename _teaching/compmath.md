@@ -4,7 +4,7 @@ collection: teaching
 type: "Postgraduate course"
 permalink: /teaching/compmath
 venue: "ATU Donegal, Department of Computing"
-date: 2023-09-12
+date: 2023-08-12
 location: "Letterkenny, Co. Donegal"
 ---
 
