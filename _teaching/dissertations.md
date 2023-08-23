@@ -8,7 +8,7 @@ date: 2023-01-01
 location: "Letterkenny"
 ---
 
-Dissertation supervision on the M.Sc. Big Data Analytics & Artificial Intelligence programme.
+Dissertation supervision on the MSc in Data Science and MSc in Big Data Analytics & Artificial Intelligence programmes.
 
 **Previous students:**
 
