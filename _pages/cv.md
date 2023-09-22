@@ -44,6 +44,7 @@ Talks
     
 Service and leadership
 ======
+ * External Examiner, TU Dublin, 2023-2027 - Computing with Machine Learning & Artificial Intelligence
  * External Examiner, Dundalk Institute of Technology, 2022-2025 - Mathematics & Data Science
  * Society for Industrial and Applied Mathematics, NUI Galway Student Chapter
    * Chapter President, 2016-2017, Secretary & Treasurer, 2015-2016.
