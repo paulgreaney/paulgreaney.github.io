@@ -11,4 +11,4 @@ tags:
 All you need is attention.
 
 
-$$\begin{pmatrix}0.1\\0.8\\0.2\end{pmatrix}$$
+$$\begin{pmatrix}0.1\\ 0.8\\ 0.2\end{pmatrix}$$
