@@ -44,7 +44,8 @@ $$W^{(i)}\to W^{(i)}-\frac{\partial \mathcal{L}}{\partial W^{(i)}}.$$
 
 To initialise the network, take 
 
-$$W^{(1)}=\begin{pmatrix}0.4&0.5&0.3\\ 0.2&0.7&0.1\end{pmatrix},\quad W^{(2)}=\begin{pmatrix}0.1&0.2\end{pmatrix},$$
+$$W^{(1)}=\begin{pmatrix}0.4&0.5&0.3\\ 
+0.2&0.7&0.1\end{pmatrix},\quad W^{(2)}=\begin{pmatrix}0.1&0.2\end{pmatrix},$$
 
 $x_1=0$, $x_2=1$, $x_3=2$, and set the target output to $y=1$ for this example.
 
@@ -52,32 +53,35 @@ The first step is to calculate output values at each node in the hidden layer an
 
 We first need to calculate the intermediate values, 
 
-$$ \boldsymbol{z}^{(1)}=W^{(1)}\boldsymbol{x},\, \boldsymbol{a}^{(1)}=\sigma(\boldsymbol{z}^{(1)})=\sigma\left(W^{(1)}\boldsymbol{x}\right), \text{ and } \boldsymbol{z}^{(2)}=W^{(2)}\boldsymbol{a}^{(1)},$$
+$$ \boldsymbol{z}^{(1)}=W^{(1)}\boldsymbol{x}, \boldsymbol{a}^{(1)}=\sigma(\boldsymbol{z}^{(1)})=\sigma\left(W^{(1)}\boldsymbol{x}\right), \text{ and } \boldsymbol{z}^{(2)}=W^{(2)}\boldsymbol{a}^{(1)},$$
+
 and the output value $\hat{y}=\sigma(\boldsymbol{z}^{(2)}).%=W^{(2)}\boldsymbol{a}^{(1)})=%\sigma\left(W^{(2)}\sigma\left(W^{(1)}\boldsymbol{x}\right)\right).$
 
 We want to compute the gradient of
-\begin{align*}
-\mathcal{L}&=\frac{1}{N}\sum_{i=1}^N(y_i-\hat{y_i})^2\\
+$$\mathcal{L}&=\frac{1}{N}\sum_{i=1}^N(y_i-\hat{y_i})^2\\
 &=\frac{1}{N}\left(\boldsymbol{y}-\hat{\boldsymbol{y}}\right)^T\left(\boldsymbol{y}-\hat{\boldsymbol{y}}\right)
 %&=\frac{1}{N}(\boldsymbol{y}^T\boldsymbol{y}-\boldsymbol{y}^T\hat{\boldsymbol{y}}-\hat{\boldsymbol{y}}^T\boldsymbol{y}+\hat{\boldsymbol{y}}^T\hat{\boldsymbol{y}}),
-\end{align*}
+$$
 which in the case of one sample reduces to 
-\begin{align*}
-\mathcal{L}&=(y-\hat{y})^2.
-\end{align*}
+$$\mathcal{L}&=(y-\hat{y})^2.$$
+
 In order to update the weights using gradient descent, we need to calculate
-$
+$$
 \dfrac{\partial\mathcal{L}}{\partial W^{(2)}}\text{ and  } \dfrac{\partial\mathcal{L}}{\partial W^{(1)}}.
-$
+$$
+
 Applying the chain rule gives
+
 $$
 \frac{\partial\mathcal{L}}{\partial W^{(2)}}=\frac{\partial\mathcal{L}}{\partial\hat{y}}\frac{\partial\hat{y}}{\partial \boldsymbol{z}^{(2)}}\frac{\partial \boldsymbol{z}^{(2)}}{\partial W^{(2)}}
 $$
+
 Now we can use the definitions of $\mathcal{L}$, $\hat{y}$, and $\boldsymbol{z}^{(2)}$ to calculate
-\begin{equation*}
-\frac{\partial\mathcal{L}}{\partial\hat{y}}=-2(y-\hat{y})=2(\hat{y}-y),
-\end{equation*}
+
+$$\frac{\partial\mathcal{L}}{\partial\hat{y}}=-2(y-\hat{y})=2(\hat{y}-y),$$
+
 and since $\hat{y}=\sigma\left(W^{(2)}\boldsymbol{a}^{(1)}\right)$, $\boldsymbol{z}^{(2)}=W^{(2)}\boldsymbol{a}^{(1)}$, we have
+
 $$\frac{\partial\hat{y}}{\boldsymbol{z}^{(2)}}= \sigma'\left(\boldsymbol{z}^{(2)}\right), \quad \frac{\partial\boldsymbol{z}^{(2)}}{\partial W^{(2)}}={\boldsymbol{a}^{(1)}}^T,$$
 $$\frac{\partial\mathcal{L}}{\partial W^{(2)}} = \underbrace{2(\hat{y}-y)}_{1\times1}\underbrace{\sigma'\left(\boldsymbol{z}^{(2)}\right)}_{1\times1}\underbrace{{\boldsymbol{a}^{(1)}}^T}_{1\times 2}.$$
 We have enough information to calculate numerical values now:
