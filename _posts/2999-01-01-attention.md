@@ -1,7 +1,7 @@
 ---
 title: 'Attention for NLP'
-date: 2023-04-22
-permalink: /posts/2013/04/attention/
+date: 2999-04-22
+permalink: /posts/2999/01/attention/
 tags:
   - attention
   - nlp
