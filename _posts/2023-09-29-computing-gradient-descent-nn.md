@@ -16,7 +16,7 @@ I haven't been able to find an explanation of the computation of updated network
 Here we do this computation by computing the partial derivatives directly, either in vector or component form, with activation function $$\sigma(z)=\frac{1}{1+e^{-z}}.$$
 
 <p align="center">
-<img width="400" src="https://raw.githubusercontent.com/paulgreaney/paulgreaney.github.io/master/_posts/nn.png" />
+<img width="350" src="https://raw.githubusercontent.com/paulgreaney/paulgreaney.github.io/master/_posts/nn.png" />
 </p>
 
 ## Network, Activation Function, and Loss Function
