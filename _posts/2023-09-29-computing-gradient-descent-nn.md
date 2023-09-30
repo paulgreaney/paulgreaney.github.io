@@ -13,38 +13,7 @@ tags:
 I haven't been able to find an explanation of the computation of updated network weights in a neural network with more than one node in more than one layer, which doesn't involve computing the error and jumping to define a formula using the element-wise product of vectors or matrices. 
 Here we do this computation by computing the partial derivatives directly, either in vector or component form, with activation function $$\sigma(z)=\frac{1}{1+e^{-z}}.$$
 
-{% tikz filename %}
-  \message{^^JNeural network with arrows}
-  \readlist\Nnod{2,3,1} % array of number of nodes per layer
-  
-  \message{^^J  Layer}
-  \foreachitem \N \in \Nnod{ % loop over layers
-    \edef\lay{\Ncnt} % alias of index of current layer
-    \message{\lay,}
-    \pgfmathsetmacro\prev{int(\Ncnt-1)} % number of previous layer
-    \pgfmathsetmacro\prevt{int(\Ncnt-2)} % number of 2nd previous layer
-    \node[node 1] (0) at (0,1)
-      {$x_1$};
-      \node[node 1] (1) at (0,0)
-      {$x_2$};
-    \node[node 1] (2) at (0,-1)
-      {$x_3$};
-    \node[node 2] (3) at (1,0.5)
-      {$a_1^{(1)}$};
-      \node[node 2] (4) at (1,-0.5)
-      {$a_2^{(1)}$};
-      \node[node 3] (5) at (2,0)
-      {$\hat{y}$};
-    \draw[connect arrow] (0) -- (3) node[pos=0.55] {\contour{white}{$w_{1,1}^{(1)}$}};
-    \draw[connect arrow] (0) -- (4) node[pos=0.25] {\contour{white}{$w_{1,2}^{(1)}$}};
-    \draw[connect arrow] (1) -- (3) node[pos=0.70] {\contour{white}{$w_{2,1}^{(1)}$}};
-    \draw[connect arrow] (1) -- (4) node[pos=0.70] {\contour{white}{$w_{2,2}^{(1)}$}};
-    \draw[connect arrow] (2) -- (3) node[pos=0.25] {\contour{white}{$w_{3,1}^{(1)}$}};
-    \draw[connect arrow] (2) -- (4) node[pos=0.55] {\contour{white}{$w_{3,2}^{(1)}$}};
-    \draw[connect arrow] (3) -- (5) node[pos=0.50] {\contour{white}{$w_{1,1}^{(2)}$}};
-    \draw[connect arrow] (4) -- (5) node[pos=0.50] {\contour{white}{$w_{2,1}^{(2)}$}};
-  }
-{% endtikz %}
+![A simple neural network](nn.svg)
 
 A neural network with an input layer consisting of three nodes, a hidden layer of two nodes, and an output node with one node. The values of the hidden layer $a_j^{(1)}$ are calculated by applying the sigmoid function to the product of the weights $w_{i,j}$ with the input values $x_i$.
 
