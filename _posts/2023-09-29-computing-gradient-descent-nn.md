@@ -21,7 +21,7 @@ Here we do this computation by computing the partial derivatives directly, eithe
 <img width="350" src="https://raw.githubusercontent.com/paulgreaney/paulgreaney.github.io/master/_posts/nn.png" />
 </p>
 
-We take a neural network with an input layer consisting of three nodes, a hidden layer of two nodes, and an output node with one node. For the activation function, , we use the sigmoid function $$\sigma(z)=\frac{1}{1+e^{-z}}.$$ The values of the hidden layer $a_j^{(1)}$ are calculated by applying the sigmoid activation function to the product of the weights $w_{i,j}$ with the input values $x_i$.
+We take a neural network with an input layer consisting of three nodes, a hidden layer of two nodes, and an output node with one node. For the activation function, we use the sigmoid function $$\sigma(z)=\frac{1}{1+e^{-z}}.$$ The values of the hidden layer $a_j^{(1)}$ are calculated by applying the sigmoid activation function to the product of the weights $w_{i,j}$ with the input values $x_i$.
 
 The mean-squared error loss function for $N$ examples is $$\mathcal{L}=\frac{1}{N}\sum_{i=1}^N (y_i-\hat{y_i})^2,$$ where $\hat{y}$ is the network output of that example at the output node, and $y$ is the  target output (label) for that example.
 Suppose we want to train our network to give output $y=1$ for input values $x_1=0$, $x_2=1$, $x_3=2$. For gradient descent, we need to calculate the gradient of the output with respect to the parameters $w_{i,j}^{(k)}$.
@@ -94,6 +94,7 @@ $$\frac{\partial\mathcal{L}}{\partial\hat{y}}=-2(y-\hat{y})=2(\hat{y}-y),$$
 and since $\hat{y}=\sigma\left(W^{(2)}\boldsymbol{a}^{(1)}\right)$, $\boldsymbol{z}^{(2)}=W^{(2)}\boldsymbol{a}^{(1)}$, we have
 
 $$\frac{\partial\hat{y}}{\boldsymbol{z}^{(2)}}= \sigma'\left(\boldsymbol{z}^{(2)}\right), \quad \frac{\partial z^{(2)}}{\partial W^{(2)}}={\boldsymbol{a}^{(1)}}^T,$$
+
 $$\frac{\partial\mathcal{L}}{\partial W^{(2)}} = 2(\hat{y}-y)\sigma'\left(z^{(2)}\right)\boldsymbol{a}^{(1)}}^T.$$
 
 Note the dimensions of these quantities ($1\times 1$ and $1\times 2$ respectively).
@@ -218,7 +219,7 @@ W^{(1)} \to W^{(1)}-\eta\frac{\partial\mathcal{L}}{\partial W^{(1)}}\\
 \end{pmatrix} =\begin{pmatrix}
 0.4&0.4999&0.2997\\
 0.2&0.6997&0.0993
-\end{pmatrix}
+\end{pmatrix}.
 $$
 
 ## Updated Prediction - Another Forward Pass
@@ -257,7 +258,7 @@ $$
 \begin{pmatrix}
 0.7501\\
 0.7106
-\end{pmatrix}=0.2406
+\end{pmatrix}=0.2406.
 $$
 
 Finally, our new prediction is
@@ -270,32 +271,7 @@ which means the error is indeed reduced after one step of gradient descent.
 
 ## Tensor Computation of Weight Updates
 
-To avoid working with the $2\times (2\times 3)$ tensor directly, we computed the gradient of the loss with respect to $W^{(1)}$ in component form. We can do this directly
-
-$$
-\frac{\partial{z^{(2)}}}{\partial \boldsymbol{a}^{(1)}}=W^{(2)},
-$$
-
-$$
-\frac{\partial{\boldsymbol{a}^{(1)}}}{\partial \boldsymbol{z}^{(1)}}=
-\left(
-\begin{matrix}
-\dfrac{\partial a_1^{(1)}}{\partial z_1^{(1)}}
-&\dfrac{\partial a_1^{(1)}}{\partial z_2^{(1)}}\\
-\dfrac{\partial a_2^{(1)}}{\partial z_1^{(1)}}
-&\dfrac{\partial a_2^{(1)}}{\partial z_2^{(1)}}
-\end{matrix}
-\right)=\left(
-\begin{matrix}
-\sigma'\left(z_1^{(1)}\right)
-&0\\
-0
-&\sigma'\left(z_2^{(1)}\right)
-\end{matrix}
-\right)
-$$
-
-The last term in $\dfrac{\partial\mathcal{L}}{\partial W^{(1)}}$ is the trickiest, since we have the gradient of a $2\times1$ vector with respect to a $2\times3$ matrix, giving a $2\times(2\times 3)$ tensor. 
+To avoid working with the $2\times (2\times 3)$ tensor directly, we computed the gradient of the loss with respect to $W^{(1)}$ in component form. We can do this directly by writing
 
 $$\frac{\partial \boldsymbol{z}^{(1)}}{\partial W^{(1)}} = \begin{pmatrix}
 \dfrac{\partial z_1^{(1)}}{\partial w_{1,1}^{(1)}}
@@ -311,29 +287,32 @@ x_1& x_2& x_3\\
 0& 0& 0\\
 0& 0& 0\\
 x_1& x_2& x_3
-\end{pmatrix}
+\end{pmatrix},
+$$
+where we have written the tensor as two $2\times 3$ matrices stacked on top of each other. 
+To do the full calculation, think of this as two rows, which we'll multiply with the two columns of the vector preceding it.
+Then with
+$$
+\frac{\partial{z^{(2)}}}{\partial \boldsymbol{a}^{(1)}}=W^{(2)},
 $$
 
-To do this calculation, think of this as two rows, which we'll multiply with the two columns of the vector preceding it.
-
-The last term in $\dfrac{\partial\mathcal{L}}{\partial W^{(1)}}$ is the trickiest, since we have the gradient of a $2\times 1$ vector with respect to a $2\times3$ matrix, giving a $2\times (2\times 3)$ tensor. 
-
-$$\frac{\partial \boldsymbol{z}^{(1)}}{\partial W^{(1)}} = 
-\begin{pmatrix}
-\dfrac{\partial z_1^{(1)}}{\partial w_{1,1}^{(1)}}
-& \dfrac{\partial z_1^{(1)}}{\partial w_{2,1}^{(1)}}
-& \dfrac{\partial z_1^{(1)}}{\partial w_{3,1}^{(1)}}\\
-0& 0& 0\\
-0& 0& 0\\
-\dfrac{\partial z_2^{(1)}}{\partial w_{1,2}^{(1)}}
-&\dfrac{\partial z_2^{(1)}}{\partial w_{2,2}^{(1)}}
-&\dfrac{\partial z_2^{(1)}}{\partial w_{3,2}^{(1)}}
+$$
+\frac{\partial{\boldsymbol{a}^{(1)}}}{\partial \boldsymbol{z}^{(1)}} = \begin{pmatrix}
+\dfrac{\partial a_1^{(1)}}{\partial z_1^{(1)}}
+&\dfrac{\partial a_1^{(1)}}{\partial z_2^{(1)}}\\
+\dfrac{\partial a_2^{(1)}}{\partial z_1^{(1)}}
+&\dfrac{\partial a_2^{(1)}}{\partial z_2^{(1)}}
 \end{pmatrix} = \begin{pmatrix}
-x_1&x_2&x_3\\
-0&0&0\\
-0&0&0\\
-x_1&x_2&x_3
-\end{pmatrix} = 2(\hat{y}-y)\sigma'(z^{(2)})
+\sigma'\left(z_1^{(1)}\right)
+&0\\
+0
+&\sigma'\left(z_2^{(1)}\right)
+\end{pmatrix}.
+$$
+
+we have
+
+$$\frac{\partial \mathcal{L}}{\partial W^{(1)}} = 2(\hat{y}-y)\sigma'(z^{(2)})
 \begin{pmatrix}
 w_{1,1}^{(2)}\sigma'\left(z_1^{(1)}\right)
 & w_{2,1}^{(2)}\sigma'\left(z_2^{(1)}\right)
