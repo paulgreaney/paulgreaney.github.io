@@ -45,7 +45,7 @@ The computation of the second equation follows a similar process.
 
 ## Training
 
-Our overall goal is to \emph{train} our network to make good predictions $\hat{y}$, by finding model parameters (weights) that minimise a loss function for inputs $x$ and labels $y$.
+Our overall goal is to _train_ our network to make good predictions $\hat{y}$, by finding model parameters (weights) that minimise a loss function for inputs $x$ and labels $y$.
 We do this by initialising the weights to some random values, and then using gradient descent to improve them:
 
 $$W^{(i)}\to W^{(i)}-\frac{\partial \mathcal{L}}{\partial W^{(i)}}.$$
