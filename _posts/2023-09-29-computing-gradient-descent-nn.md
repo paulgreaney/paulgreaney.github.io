@@ -13,7 +13,9 @@ tags:
 I haven't been able to find an explanation of the computation of updated network weights in a neural network with more than one node in more than one layer, which doesn't involve computing the error and jumping to define a formula using the element-wise product of vectors or matrices. 
 Here we do this computation by computing the partial derivatives directly, either in vector or component form, with activation function $$\sigma(z)=\frac{1}{1+e^{-z}}.$$
 
-![A simple neural network](nn.svg)
+<p align="center">
+<img width="400" src="https://raw.githubusercontent.com/paulgreaney/paulgreaney.github.io/master/_posts/nn.png" />
+</p>
 
 A neural network with an input layer consisting of three nodes, a hidden layer of two nodes, and an output node with one node. The values of the hidden layer $a_j^{(1)}$ are calculated by applying the sigmoid function to the product of the weights $w_{i,j}$ with the input values $x_i$.
 
