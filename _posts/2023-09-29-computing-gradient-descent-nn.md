@@ -58,23 +58,22 @@ $$ \boldsymbol{z}^{(1)}=W^{(1)}\boldsymbol{x}, \boldsymbol{a}^{(1)}=\sigma(\bold
 and the output value $\hat{y}=\sigma(\boldsymbol{z}^{(2)}).%=W^{(2)}\boldsymbol{a}^{(1)})=%\sigma\left(W^{(2)}\sigma\left(W^{(1)}\boldsymbol{x}\right)\right).$
 
 We want to compute the gradient of
-$$\mathcal{L}&=\frac{1}{N}\sum_{i=1}^N(y_i-\hat{y_i})^2\\
-&=\frac{1}{N}\left(\boldsymbol{y}-\hat{\boldsymbol{y}}\right)^T\left(\boldsymbol{y}-\hat{\boldsymbol{y}}\right)
-%&=\frac{1}{N}(\boldsymbol{y}^T\boldsymbol{y}-\boldsymbol{y}^T\hat{\boldsymbol{y}}-\hat{\boldsymbol{y}}^T\boldsymbol{y}+\hat{\boldsymbol{y}}^T\hat{\boldsymbol{y}}),
+
+$$\mathcal{L} = \frac{1}{N}\sum_{i=1}^N(y_i-\hat{y_i})^2 = \frac{1}{N}\left(\boldsymbol{y}-\hat{\boldsymbol{y}}\right)^T\left(\boldsymbol{y}-\hat{\boldsymbol{y}}\right)
 $$
+
 which in the case of one sample reduces to 
-$$\mathcal{L}&=(y-\hat{y})^2.$$
+$$\mathcal{L}=(y-\hat{y})^2.$$
 
 In order to update the weights using gradient descent, we need to calculate
+
 $$
 \dfrac{\partial\mathcal{L}}{\partial W^{(2)}}\text{ and  } \dfrac{\partial\mathcal{L}}{\partial W^{(1)}}.
 $$
 
 Applying the chain rule gives
 
-$$
-\frac{\partial\mathcal{L}}{\partial W^{(2)}}=\frac{\partial\mathcal{L}}{\partial\hat{y}}\frac{\partial\hat{y}}{\partial \boldsymbol{z}^{(2)}}\frac{\partial \boldsymbol{z}^{(2)}}{\partial W^{(2)}}
-$$
+$$\frac{\partial\mathcal{L}}{\partial W^{(2)}}=\frac{\partial\mathcal{L}}{\partial\hat{y}}\frac{\partial\hat{y}}{\partial \boldsymbol{z}^{(2)}}\frac{\partial \boldsymbol{z}^{(2)}}{\partial W^{(2)}}$$
 
 Now we can use the definitions of $\mathcal{L}$, $\hat{y}$, and $\boldsymbol{z}^{(2)}$ to calculate
 
@@ -82,84 +81,96 @@ $$\frac{\partial\mathcal{L}}{\partial\hat{y}}=-2(y-\hat{y})=2(\hat{y}-y),$$
 
 and since $\hat{y}=\sigma\left(W^{(2)}\boldsymbol{a}^{(1)}\right)$, $\boldsymbol{z}^{(2)}=W^{(2)}\boldsymbol{a}^{(1)}$, we have
 
-$$\frac{\partial\hat{y}}{\boldsymbol{z}^{(2)}}= \sigma'\left(\boldsymbol{z}^{(2)}\right), \quad \frac{\partial\boldsymbol{z}^{(2)}}{\partial W^{(2)}}={\boldsymbol{a}^{(1)}}^T,$$
-$$\frac{\partial\mathcal{L}}{\partial W^{(2)}} = \underbrace{2(\hat{y}-y)}_{1\times1}\underbrace{\sigma'\left(\boldsymbol{z}^{(2)}\right)}_{1\times1}\underbrace{{\boldsymbol{a}^{(1)}}^T}_{1\times 2}.$$
+$$\frac{\partial\hat{y}}{\boldsymbol{z}^{(2)}}= \sigma'\left(\boldsymbol{z}^{(2)}\right), \quad \frac{\partial z^{(2)}}{\partial W^{(2)}}={\boldsymbol{a}^{(1)}}^T,$$
+$$\frac{\partial\mathcal{L}}{\partial W^{(2)}} = 2(\hat{y}-y)\sigma'\left(z^{(2)}\right)\boldsymbol{a}^{(1)}}^T.$$
+
+Note the dimensions of these quantities ($1\times 1$ and $1\times 2$ respectively).
+
 We have enough information to calculate numerical values now:
-\begin{align*}
-\frac{\partial\mathcal{L}}{\partial W^{(2)}}
-&= 2(0.554-1)\times\sigma'\left(0.217\right)\times\begin{pmatrix}0.75&0.71\end{pmatrix}\\
-&=-0.22\begin{pmatrix}0.75&0.71\end{pmatrix}\\
-&=\begin{pmatrix}-0.165&-0.156\end{pmatrix}
-\end{align*}
+
+$$\frac{\partial\mathcal{L}}{\partial W^{(2)}}
+= 2(0.554-1)\times\sigma'\left(0.217\right)\times\begin{pmatrix}0.75&0.71\end{pmatrix} = -0.22\begin{pmatrix}0.75&0.71\end{pmatrix} =\begin{pmatrix}-0.165&-0.156\end{pmatrix}$$
+
 Then taking a step-size of $\eta=0.1$,
-\begin{align*}
-W^{(2)}&\to W^{(2)}-\eta \frac{\partial\mathcal{L}}{\partial W^{(2)}} \\
-&=\begin{pmatrix}0.1&0.2\end{pmatrix}-0.1\begin{pmatrix}-0.165&-0.156\end{pmatrix}\\
-&=\begin{pmatrix}0.1165&0.2156\end{pmatrix}
-\end{align*}
+
+$$
+W^{(2)} \to W^{(2)}-\eta \frac{\partial\mathcal{L}}{\partial W^{(2)}} = \begin{pmatrix}0.1& 0.2\end{pmatrix}-0.1\begin{pmatrix}-0.165& -0.156\end{pmatrix}
+ = \begin{pmatrix}0.1165& 0.2156\end{pmatrix}.
+ $$
+
 These are the new weights applied to the outputs of the hidden layer to calculate the network output $\hat{y}$.
 We can similarly compute
+
 $$
 \frac{\partial\mathcal{L}}{\partial W^{(1)}}= 
-\underbrace{\frac{\partial\mathcal{L}}{\partial\hat{y}}}_{1\times1}
-\underbrace{\frac{\partial\hat{y}}{\partial \boldsymbol{z}^{(2)}}}_{1\times1}
-\underbrace{\frac{\partial{\boldsymbol{z}^{(2)}}}{\partial \boldsymbol{a}^{(1)}}}_{1\times2}
-\underbrace{\frac{\partial{\boldsymbol{a}^{(1)}}}{\partial \boldsymbol{z}^{(1)}}}_{2\times2}
-\underbrace{\frac{\partial \boldsymbol{z}^{(1)}}{\partial W^{(1)}}}_{2\times(2\times3)}.
+\frac{\partial\mathcal{L}}{\partial\hat{y}}
+\frac{\partial\hat{y}}{\partial \boldsymbol{z}^{(2)}}
+\frac{\partial{\boldsymbol{z}^{(2)}}}{\partial \boldsymbol{a}^{(1)}}
+\frac{\partial{\boldsymbol{a}^{(1)}}}{\partial \boldsymbol{z}^{(1)}}
+\frac{\partial \boldsymbol{z}^{(1)}}{\partial W^{(1)}}.
 $$
+
+Again note the quantities involved here: the first two terms on the right-hand side are $1\times 1$ (scalars), the third is a $1\times 2$ vector, the fourth a $2\times 2$ matrix, and the last term is the gradient of a $2\times 1$ vector with respect to a $2\times 3$ matrix, which gives a $2\times (2\times 3)$ tensor.
 This will become rather unwieldy if we use the $2\times(2\times 3)$ representation of the last term, so let's compute it in component form instead. The tensor computation is given at the end for completeness.
-We have
+
+Now, for the component form we have
+
 $$
 \frac{\partial \mathcal{L}}{\partial W^{(1)}}=
 \begin{pmatrix}
 \dfrac{\partial \mathcal{L}}{\partial w_{1,1}}
 &\dfrac{\partial \mathcal{L}}{\partial w_{2,1}}
-&\dfrac{\partial \mathcal{L}}{\partial w_{3,1}}\vspace*{5pt}\\
+&\dfrac{\partial \mathcal{L}}{\partial w_{3,1}}\\
 \dfrac{\partial \mathcal{L}}{\partial w_{2,1}}
 &\dfrac{\partial \mathcal{L}}{\partial w_{2,2}}
 &\dfrac{\partial \mathcal{L}}{\partial w_{2,3}}
 \end{pmatrix},
 $$
+
 so let's calculate each of these six components.
 We have 
-\begin{align*}
-\frac{\partial \mathcal{L}}{\partial w_{1,1}}&=
-\frac{\partial\mathcal{L}}{\partial\hat{y}}\frac{\partial\hat{y}}{\partial z^{(2)}}
-\left(
-\frac{\partial{z^{(2)}}}{\partial a_1^{(1)}}
-\frac{\partial{a_1^{(1)}}}{\partial z_1^{(1)}}
-\frac{\partial z_1^{(1)}}{\partial w_{1,1}^{(1)}}
-+
-\frac{\partial{z^{(2)}}}{\partial a_2^{(1)}}
-\frac{\partial{a_2^{(1)}}}{\partial z_2^{(1)}}
-\frac{\partial z_2^{(1)}}{\partial w_{1,1}^{(1)}}
-\right)\\
-&=2(\hat{y}-y)\sigma'\left(z^{(2)}\right)w_{1,1}^{(2)}\sigma'\left(z_1^{(1)}\right)x_1.
-\end{align*}
+
+$$
+\frac{\partial \mathcal{L}}{\partial w_{1,1}} = \frac{\partial\mathcal{L}}{\partial\hat{y}}\frac{\partial\hat{y}}{\partial z^{(2)}} \left(\frac{\partial{z^{(2)}}}{\partial a_1^{(1)}}\frac{\partial{a_1^{(1)}}}{\partial z_1^{(1)}}\frac{\partial z_1^{(1)}}{\partial w_{1,1}^{(1)}} + \frac{\partial{z^{(2)}}}{\partial a_2^{(1)}}\frac{\partial{a_2^{(1)}}}{\partial z_2^{(1)}}\frac{\partial z_2^{(1)}}{\partial w_{1,1}^{(1)}}
+\right) =2(\hat{y}-y)\sigma'\left(z^{(2)}\right)w_{1,1}^{(2)}\sigma'\left(z_1^{(1)}\right)x_1.$$
+
 The full matrix is then
+
 $$
 \frac{\partial \mathcal{L}}{\partial W^{(1)}}=
 2(\hat{y}-y)\sigma'\left(z^{(2)}\right)
 \begin{pmatrix}
 w_{1,1}^{(2)}\sigma'(z_1^{(1)})x_1
 &w_{1,1}^{(2)}\sigma'(z_1^{(1)})x_2
-&w_{1,1}^{(2)}\sigma'(z_1^{(1)})x_1
-\vspace*{5pt}\\
+&w_{1,1}^{(2)}\sigma'(z_1^{(1)})x_1\\
 w_{2,1}^{(2)}\sigma'(z_2^{(1)})x_1
 &w_{2,1}^{(2)}\sigma'(z_2^{(1)})x_2
 &w_{2,1}^{(2)}\sigma'(z_2^{(1)})x_3
-\end{pmatrix},
+\end{pmatrix}$$
 
-We found earlier that $$\sigma'(\boldsymbol{z}^{(2)})=\sigma'(2.17)=0.092,$$ and
-$$\boldsymbol{z}^{(1)}=\begin{pmatrix}1.1\\ 0.9\end{pmatrix}$$
+We found earlier that 
+
+$$\sigma'(\boldsymbol{z}^{(2)})=\sigma'(2.17)=0.092,$$ 
+
+and
+
+$$\boldsymbol{z}^{(1)}=\begin{pmatrix}1.1\\ 
+0.9\end{pmatrix}$$
+
 so we calculate
-\begin{align*}
-\sigma'(\boldsymbol{z}^{(1)})=\sigma\begin{pmatrix}1.1\\ 0.9\end{pmatrix}\left(1-\sigma\begin{pmatrix}1.1\\ 0.9\end{pmatrix}\right)=\begin{pmatrix}0.187\\0.206\end{pmatrix}.
-\end{align*}
+
+$$
+\sigma'(\boldsymbol{z}^{(1)})=\sigma\begin{pmatrix}1.1\\ 
+0.9\end{pmatrix}\left(1-\sigma\begin{pmatrix}1.1\\
+0.9\end{pmatrix}\right)=\begin{pmatrix}0.187\\ 
+0.206\end{pmatrix}.
+$$
+
 Substituting gives
-\begin{align*}
+
+$$
 \frac{\partial\mathcal{L}}{\partial W^{(1)}}
-&=-2(0.554-1)(0.092)
+=-2(0.554-1)(0.092)
 \begin{pmatrix}
 0.187(0.1)(0)
 &0.187(0.1)(1)
@@ -167,13 +178,8 @@ Substituting gives
 0.206(0.2)(0)
 &0.206(0.2)(1)
 &0.206(0.2)(2)
-\end{pmatrix},
-\end{align*}
-
-
-\begin{align*}
-\frac{\partial\mathcal{L}}{\partial W^{(1)}}
-&=0.082
+\end{pmatrix}
+= 0.082
 \begin{pmatrix}
 0
 &0.0187
@@ -184,49 +190,63 @@ Substituting gives
 \end{pmatrix}=\begin{pmatrix}
 0&0.0015&0.0031\\
 0&0.0034&0.0068
-\end{pmatrix}.
-\end{align*}
+\end{pmatrix}.$$
+
 Our updated weights after one pass are then
-\begin{align*}
-W^{(1)} &\to W^{(1)}-\eta\frac{\partial\mathcal{L}}{\partial W^{(1)}}\\
-&=\begin{pmatrix}0.4&0.5&0.3\\0.2&0.7&0.1\end{pmatrix}-0.1\begin{pmatrix}
+
+$$
+W^{(1)} \to W^{(1)}-\eta\frac{\partial\mathcal{L}}{\partial W^{(1)}}\\
+=\begin{pmatrix}0.4&0.5&0.3\\
+0.2&0.7&0.1\end{pmatrix}-0.1\begin{pmatrix}
 0&0.0015&0.0031\\
 0&0.0034&0.0068
-\end{pmatrix}\\
-&=\begin{pmatrix}
+\end{pmatrix} =\begin{pmatrix}
 0.4&0.4999&0.2997\\
 0.2&0.6997&0.0993
 \end{pmatrix}
-\end{align*}
+$$
+
 Remember that we're trying to train our network to predict $\hat{y}=1$ when $\boldsymbol{x}=(0,1,2)$.
 If we're making progress, our new weights should give a better prediction than $\hat{y}=0.5541$ found from the initial set of weights.
 We have
+
 $$
-\hspace*{-50pt}
 \boldsymbol{z}^{(1)}=W^{(1)}\boldsymbol{x}=\begin{pmatrix}
-0.4&0.4998&0.2996\\
-0.2&0.6997&0.0993
+0.4& 0.4998& 0.2996\\
+0.2& 0.6997& 0.0993
 \end{pmatrix}\begin{pmatrix}
-0\\1\\2
+0\\
+1\\
+2
 \end{pmatrix}=\begin{pmatrix}
-1.099\\0.8983
+1.099\\
+0.8983
 \end{pmatrix},
 $$
+
 $$
 \boldsymbol{a}^{(1)}=\sigma(\boldsymbol{z}^{(1)})=\begin{pmatrix}
-0.7501\\0.7106
+0.7501\\
+0.7106
 \end{pmatrix},
 $$
+
 and
-\begin{align*}
+
+$$
 \boldsymbol{z}^{(2)}=W^{(2)}\boldsymbol{a}^{(1)}=\begin{pmatrix}
 0.1165 &0.2156
 \end{pmatrix}
 \begin{pmatrix}
-0.7501\\0.7106
+0.7501\\
+0.7106
 \end{pmatrix}=0.2406
-\end{align*}
+$$
+
 Finally, our new prediction is
-\begin{align*}
-\hat{y}=\sigma\left(\boldsymbol{z}^{(2)}\right)=0.5599.
-\end{align*}
+
+$$
+\hat{y}=\sigma\left(\boldsymbol{z}^{(2)}\right)=0.5599,
+$$
+
+which means the error is indeed reduced after one step of gradient descent.
