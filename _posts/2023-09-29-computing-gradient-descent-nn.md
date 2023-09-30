@@ -93,7 +93,7 @@ $$\frac{\partial\mathcal{L}}{\partial\hat{y}}=-2(y-\hat{y})=2(\hat{y}-y),$$
 
 and since $\hat{y}=\sigma\left(W^{(2)}\boldsymbol{a}^{(1)}\right)$, $\boldsymbol{z}^{(2)}=W^{(2)}\boldsymbol{a}^{(1)}$, we have
 
-$$\frac{\partial\hat{y}}{\boldsymbol{z}^{(2)}}= \sigma'\left(\boldsymbol{z}^{(2)}\right), \quad \frac{\partial z^{(2)}}{\partial W^{(2)}}=\boldsymbol{a}^{(1)}}^T,$$
+$$\frac{\partial\hat{y}}{\boldsymbol{z}^{(2)}}= \sigma'\left(\boldsymbol{z}^{(2)}\right), \quad \frac{\partial z^{(2)}}{\partial W^{(2)}}=\boldsymbol{a}^{(1)}^T,$$
 
 $$\frac{\partial \mathcal{L}}{\partial W^{(2)}} = 2(\hat{y}-y)\sigma' \left( z^{(2)}\right) \boldsymbol{a}^{(1)}^T.$$
 
