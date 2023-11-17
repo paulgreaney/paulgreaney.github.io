@@ -309,7 +309,7 @@ $$
 \end{pmatrix}.
 $$
 
-we have
+We then have
 
 $$\frac{\partial \mathcal{L}}{\partial W^{(1)}} = 2(\hat{y}-y)\sigma'(z^{(2)})
 \begin{pmatrix}
