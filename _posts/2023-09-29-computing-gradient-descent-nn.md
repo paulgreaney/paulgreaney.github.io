@@ -31,7 +31,7 @@ We can write the weights between layer $i$ and layer $(i-1)$ as a matrix, so tha
 
 For convenience later, we define $$\boldsymbol{z}^{(1)}=W^{(1)}\boldsymbol{x}, \quad z^{(2)}=W^{(2)}\boldsymbol{a}^{(1)}.$$
 
-In component form, the first equation here is
+Then, for example, the first equation here in component form is
 
 $$\left(\begin{matrix}a_1^{(1)}\\ 
 a_2^{(1)}\end{matrix}\right) = \sigma\left(\begin{matrix}z_1^{(1)}\\ 
@@ -41,14 +41,14 @@ x_1\\
 x_2\\ 
 x_3\end{matrix}\right)\right)$$
 
-The computation of the second equation follows a similar process.
 
 ## Training
 
 Our overall goal is to _train_ our network to make good predictions $\hat{y}$, by finding model parameters (weights) that minimise a loss function for inputs $x$ and labels $y$.
 We do this by initialising the weights to some random values, and then using gradient descent to improve them:
 
-$$W^{(i)}\to W^{(i)}-\frac{\partial \mathcal{L}}{\partial W^{(i)}}.$$
+$$W^{(i)}\to W^{(i)}-\eta\frac{\partial \mathcal{L}}{\partial W^{(i)}},$$
+where $\eta$ is the learning rate.
 
 ## Initialisation and Forward Pass
 
