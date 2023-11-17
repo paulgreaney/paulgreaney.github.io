@@ -78,10 +78,8 @@ which in the case of one sample reduces to
 $$\mathcal{L}=(y-\hat{y})^2.$$
 
 In order to update the weights using gradient descent, we need to calculate
+$\frac{\partial\mathcal{L}}{\partial W^{(2)}}$ and $\frac{\partial\mathcal{L}}{\partial W^{(1)}}$.
 
-$$
-\dfrac{\partial\mathcal{L}}{\partial W^{(2)}}\text{ and  } \dfrac{\partial\mathcal{L}}{\partial W^{(1)}}.
-$$
 
 Applying the chain rule gives
 
