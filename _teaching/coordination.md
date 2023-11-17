@@ -1,5 +1,5 @@
 ---
-title: "Dissertation Coordinatino"
+title: "Dissertation Coordination"
 collection: teaching
 type: "coordination"
 permalink: /teaching/coordination
