@@ -11,7 +11,7 @@ location: "Letterkenny, Co. Donegal"
 DevOps Project Management module on the MSc and Postgraduate Diploma in DevOps.
 
 Learning Outcomes:
-1. Design, justify and implement the correct controls/processes for Release and Change Management in an Agile delivery organisation
+1. Design, justify and implement the correct controls/processes for release and change management in an Agile delivery organisation
 2. Devise and construct systems for the measurement of performance for delivery success according to KPIs appropriate to the problem set
 3. Establish an appropriate deployment workflow to improve cost, quality and performance in the deployment process
 4. Recognize and mitigate factors which may have a negative impact on the delivery lifecycle
