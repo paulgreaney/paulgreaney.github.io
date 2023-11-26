@@ -1,7 +1,7 @@
 ---
 title: "Dissertation Coordination"
 collection: teaching
-type: "coordination"
+type: "Postgraduate couse"
 permalink: /teaching/coordination
 venue: "ATU Donegal, Department of Computing"
 date: 2023-09-01
