@@ -12,6 +12,14 @@ Dissertation supervision on the MSc in Data Science and MSc in Big Data Analytic
 
 **Previous students:**
 
+13. Vishruth Shantharaju Manju (MSc in Data Science, 2024) - _Machine Learning and Deep Learning Approaches for Page-Level E-Commerce Interaction Analysis_
+
+12. Shadrack Nyaribo (MSc in Big Data Analytics and Artificial Intelligence, 2024) - _Predicting Downstream Flows in an Airport Baggage Handling System_
+
+11. Matthew McGroary (MSc in Big Data Analytics, 2024) - _Assessing Machine Learning Models for Detecting Human and Bot Players in Video Game Footage_
+  
+10. Darragh Johnston (MSc in Big Data Analytics and Artificial Intelligence, 2024) - _Anomaly Detection in Airport Baggage System Flows_
+
 9. Madhumita Srivastava (MSc in Data Science, 2023) - _Resume Named Entity Recognition using a Fine-Tuned Pre-Trained BERT Base Model_
 
 8. Sinéad Walsh (MSc in Data Science, 2023) - _Multi-Category Online Hate Speech Classification using NLP Feature Engineering with an LSTM Model_
@@ -26,6 +34,6 @@ Dissertation supervision on the MSc in Data Science and MSc in Big Data Analytic
 
 3. Jaisal Sabu (MSc in Big Data Analytics, 2022) - _Deep Learning Models for Drug-Target Interaction_
 
-2. Ezra Kirui (MSc in Big Data Analytics & Artificial Intelligence, 2022) - _Independent Ethical Judgment by Autonomous Vehicles During Obstacle Avoidance_
+2. Ezra Kirui (MSc in Artificial Intelligence Research, 2022) - _Independent Ethical Judgment by Autonomous Vehicles During Obstacle Avoidance_
 
 1. Connie McLaughlin (MSc Big Data Analytics & Artificial Intelligence, 2022) - _Using Machine Learning and Sentiment Analysis for Cryptocurrency Price Predictions_
