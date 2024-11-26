@@ -46,6 +46,7 @@ Publications
     
 Service and Leadership
 ======
+ * Internal Examiner, Masters by Research  - Zain Ali, 2023
  * External Examiner, TU Dublin, 2023-2027 - Computing with Machine Learning & Artificial Intelligence
  * External Examiner, Dundalk Institute of Technology, 2022-2025 - Mathematics & Data Science
  * Society for Industrial and Applied Mathematics, NUI Galway Student Chapter
