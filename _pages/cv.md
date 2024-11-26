@@ -20,6 +20,7 @@ Work experience
 
 Education
 ======
+* Postgraduate Certificate in Teaching, Learning and Assessment, ATU (in progress)
 * BSc in Applied Mathematics, NUI Galway, 2014
 * PhD in Applied Mathematics, NUI Galway, 2018
 
@@ -32,17 +33,18 @@ Education
 
 Publications
 ======
-  <ul>{% for post in site.publications %}
+<p>A list of publications can be found on my <a href="https://scholar.google.com/citations?user=HuCttXIAAAAJ&amp;hl=en" target="_blank">Google Scholar profile</a>.</p>
+<!--  <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul>-->
   
-Talks
+<!--Talks
 ======
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul>-->
     
-Service and leadership
+Service and Leadership
 ======
  * External Examiner, TU Dublin, 2023-2027 - Computing with Machine Learning & Artificial Intelligence
  * External Examiner, Dundalk Institute of Technology, 2022-2025 - Mathematics & Data Science
