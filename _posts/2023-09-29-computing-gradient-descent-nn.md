@@ -1,6 +1,6 @@
 ---
 title: 'Computing Gradient Descent in Neural Networks By Hand'
-date: 2023-09-29
+date: 2123-09-29
 permalink: /posts/2023/09/computing-gradient-descent-nn/
 tags:
   - gradient descent
