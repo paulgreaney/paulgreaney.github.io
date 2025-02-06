@@ -12,6 +12,10 @@ Dissertation supervision on the MSc in Data Science and MSc in Big Data Analytic
 
 **Previous students:**
 
+15. Armando Camacho Valdivia (MSc in Big Data Analytics and Artificial Intelligence, 2025) - _Incorporating Machine Learning Algorithms into Predictive Maintenance_
+
+14. Umakanth Pasunuru (MSc in Data Science, 2025) - _An Assessment of Detecting LLM Generated Text Using Supervised Machine Learning_
+
 13. Vishruth Shantharaju Manju (MSc in Data Science, 2024) - _Machine Learning and Deep Learning Approaches for Page-Level E-Commerce Interaction Analysis_
 
 12. Shadrack Nyaribo (MSc in Big Data Analytics and Artificial Intelligence, 2024) - _Predicting Downstream Flows in an Airport Baggage Handling System_
