@@ -20,9 +20,9 @@ Work experience
 
 Education
 ======
-* Postgraduate Certificate in Teaching, Learning and Assessment, ATU (in progress)
-* BSc in Applied Mathematics, NUI Galway, 2014
+* Postgraduate Certificate in Teaching, Learning and Assessment, ATU, 2025
 * PhD in Applied Mathematics, NUI Galway, 2018
+* BSc in Applied Mathematics, NUI Galway, 2014
 
 <!--Teaching
 ======
