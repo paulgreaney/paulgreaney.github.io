@@ -46,7 +46,10 @@ Publications
     
 Service and Leadership
 ======
- * Internal Examiner, Masters by Research  - Zain Ali, 2023
+ * Reviewer for Nature Scientific Reports, Recent Advances in Natural Language Processing Conference, Irish Conference on Artificial Intelligence and Cognitive Science, Irish Signals and Systems Conference
+ * Programme Chair, BSc in Computing and AI (2024-present), MSc in Data Science (2024-present)
+ * Member of ATU Academic Council (2022-2025); member of Academic Standards and Policy Committee.
+ * Internal Examiner, ATU, Masters by Research  - Zain Ali, 2023
  * External Examiner, TU Dublin, 2023-2027 - Computing with Machine Learning & Artificial Intelligence
  * External Examiner, Dundalk Institute of Technology, 2022-2025 - Mathematics & Data Science
  * Society for Industrial and Applied Mathematics, NUI Galway Student Chapter
