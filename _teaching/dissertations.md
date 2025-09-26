@@ -1,10 +1,7 @@
 ---
 title: "Dissertation Supervision"
 collection: teaching
-type: ""
 permalink: /teaching/dissertations
-venue: ""
-location: ""
 ---
 
 Dissertation supervision on the MSc in Data Science and MSc in Big Data Analytics & Artificial Intelligence programmes.
