@@ -7,7 +7,6 @@ permalink: /teaching/dissertations
 venue: "ATU Donegal"
 location: "Letterkenny"
 venue: ""
-date: 2025
 location: ""
 ---
 
