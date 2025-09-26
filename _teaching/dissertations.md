@@ -12,6 +12,20 @@ Dissertation supervision on the MSc in Data Science and MSc in Big Data Analytic
 
 **Previous students:**
 
+22. Solomon Udele (MSc in Big Data Analytics and Artificial Intelligence, 2025) - _A Deep Reinforcement Learning Approach to Traffic Congestion Prediction Using Dublin’s SCATS Data_
+
+21. Subbaraya Dasari (MSc in Big Data Analytics and Artificial Intelligence, 2025) - _AI-Powered Detection of Gender-Based Violence on Twitter_
+
+20. Sheefa Naz (MSc in Big Data Analytics and Artificial Intelligence, 2025) - _Self-Supervised Learning for Anomaly Detection in System Logs using Transformer Models_
+
+19. Oisín O'Brien (MSc in Data Science, 2025) - _Prediction of Significant Wave Height using Bidirectional Long Short-Term Memory_
+
+18. Ifunanya Akupuome (MSc in Data Science, 2025) - _Evaluating the Effectiveness of Synthetic Ultrasound Images for Prenatal Anomaly Detection_
+
+17. Ibrahim Shaik (MSc in Big Data Analytics and Artificial Intelligence, 2025) - _Safeguarding Trust in Digital Marketplaces through AI-Based Fake Review Detection_
+
+16. Baran Yanik (MSc in Data Science, 2025) - _Predicting Premier League Match Outcomes: A Machine Learning Approach with Historical Team Statistics_
+
 15. Armando Camacho Valdivia (MSc in Big Data Analytics and Artificial Intelligence, 2025) - _Incorporating Machine Learning Algorithms into Predictive Maintenance_
 
 14. Umakanth Pasunuru (MSc in Data Science, 2025) - _An Assessment of Detecting LLM Generated Text Using Supervised Machine Learning_
