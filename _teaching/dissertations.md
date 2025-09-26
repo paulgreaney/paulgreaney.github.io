@@ -2,12 +2,9 @@
 title: "Dissertation Supervision"
 collection: teaching
 type: "MSc Dissertation Supervision"
-type: ""
 permalink: /teaching/dissertations
 venue: "ATU Donegal"
 location: "Letterkenny"
-venue: ""
-location: ""
 ---
 
 Dissertation supervision on the MSc in Data Science and MSc in Big Data Analytics & Artificial Intelligence programmes.
