@@ -41,9 +41,9 @@ Dissertation supervision on the MSc in Data Science and MSc in Big Data Analytic
   
 10. Darragh Johnston (MSc in Big Data Analytics and Artificial Intelligence, 2024) - _Anomaly Detection in Airport Baggage System Flows_
 
-9. Madhumita Srivastava (MSc in Data Science, 2023) - _Resume Named Entity Recognition using a Fine-Tuned Pre-Trained BERT Base Model_ (https://ieeexplore.ieee.org/document/10470917/)[(conference paper)]
+9. Madhumita Srivastava (MSc in Data Science, 2023) - _Resume Named Entity Recognition using a Fine-Tuned Pre-Trained BERT Base Model_ [(conference paper)](https://ieeexplore.ieee.org/document/10470917/)
 
-8. Sinéad Walsh (MSc in Data Science, 2023) - _Multi-Category Online Hate Speech Classification using NLP Feature Engineering with an LSTM Model_ (https://doi.org/10.1017/nlp.2024.62)[(journal paper)]
+8. Sinéad Walsh (MSc in Data Science, 2023) - _Multi-Category Online Hate Speech Classification using NLP Feature Engineering with an LSTM Model_ [(journal paper)](https://doi.org/10.1017/nlp.2024.62)
 
 7. Mughilan Kumar (MSc in Big Data Analytics and Artificial Intelligence, 2023) - _Predicting Estimated Time of Arrival on a Dublin Road Network using Graph Neural Networks_
 
