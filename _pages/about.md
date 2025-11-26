@@ -13,4 +13,4 @@ I am a lecturer in the Department of Computing at Atlantic Technological Univers
 Prior to this, I spent three years as a research engineer at [Valeo Vision Systems](https://www.valeo.com/en/), working on deep learning algorithms for computer vision.
 Before that, I completed a PhD in Applied Mathematics, in the School of Mathematical and Statistical Sciences at the University of Galway.
 
-My research focuses on machine learning applications across natural language processing and computer vision. For further information see the publications listed on my <a href="https://scholar.google.com/citations?user=HuCttXIAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.
+My research focuses on machine learning applications across natural language processing and computer vision. For further information see the publications listed on my <a href="https://scholar.google.com/citations?user=HuCttXIAAAAJ&hl=en" target="_blank">Google Scholar profile</a>. I am a member of the ATU [Centre for Mathematical Modelling & Intelligent Systems for Health & Environment](https://www.mishe.ie/) and [Wireless Sensor and Applied Research Lab (WiSAR)](https://www.wisar.ie/).
